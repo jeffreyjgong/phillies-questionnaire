@@ -11,7 +11,7 @@ This is a web-app deployed with Flask, which dynamically populates 2 histograms 
 3. cd into the repo ```cd phillies-questionnaire```
 4. Install requirements ```pip install -r requirements.txt```
 5. Run ```app.py``` with either, ```flask run```, ```python3 -m flask run```, ```python3 app.py```, or some related version of that
-6. Navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+6. Navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) (zoom out if images aren't side by side correctly)
 
 ## Quick Explanation of Some of the Code
 #### Testing the data for malformed outputs ([test.py](https://github.com/jeffreyjgong/phillies-questionnaire/blob/main/tests/test.py))
