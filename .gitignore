@@ -1,3 +1,5 @@
 test_outputs
 *.pyc
 __pycache__
+website/static/images/hist1.png
+website/static/images/hist2.png
