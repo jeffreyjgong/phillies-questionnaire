@@ -1,4 +1,4 @@
-# Phillies Questionnaire (part b)
+# Phillies Questionnaire (part b) by Jeffrey Gong
 
 This is a web-app deployed with Flask, which dynamically populates 2 histograms and the average salary of the top 125 highest MLB salaries of the given year using Python, lxml.html, regex, requests, and matplotlib. An [example of the site](#example-of-the-site), [steps to clone and host locally](#steps-to-run-locally), [a quick explanation of some of the code](#quick-explanation-of-some-of-the-code), and [references can be found below](#references). 
 
