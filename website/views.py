@@ -8,6 +8,8 @@ from get_salaries import get_salaries
 views = Blueprint('views', __name__)
 
 PICTURE_FOLDER = os.path.join('static', 'images')
+PICTURE_FOLDER_GLOBAL = os.path.join('website', 'static', 'images')
+
 URL = 'https://questionnaire-148920.appspot.com/swe/data.html'
 
 @views.route('/')
@@ -23,11 +25,11 @@ def create_hists(salaries, year, total_num):
    plt.suptitle("Histogram showing " + str(total_num) + " MLB Players' salaries")
    plt.xlabel('Dollar amount in ten millions')
    plt.ylabel('Number of players')
-   plt.savefig('website\static\images\hist1.png')
+   plt.savefig(os.path.join(PICTURE_FOLDER_GLOBAL, 'hist1.png'))
    plt.clf()
    plt.hist(salaries[0:125], rwidth=0.9, color = "orange", ec = "orange")
    plt.suptitle("Histogram showing the top 125 MLB Players' salaries")
    plt.xlabel('Dollar amount in ten millions')
    plt.ylabel('Number of players')
-   plt.savefig('website\static\images\hist2.png')
+   plt.savefig(os.path.join(PICTURE_FOLDER_GLOBAL, 'hist2.png'))
    plt.clf()
