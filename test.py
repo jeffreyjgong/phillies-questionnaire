@@ -14,7 +14,7 @@ table_rows = contents.xpath('//tr')
 count = 0
 print('Total rows of salary data: ', len(table_rows))
 
-with open('tests\malformed_outputs.txt', 'w') as f_1, open('tests\correct_outputs.txt', 'w') as f_2:
+with open('test_outputs\malformed_outputs.txt', 'w') as f_1, open('test_outputs\correct_outputs.txt', 'w') as f_2:
    for t in table_rows:
       #https://regexlib.com/REDetails.aspx?regexp_id=130
       x = re.search(r"^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(\.[0-9][0-9])?$", t[1].text_content())

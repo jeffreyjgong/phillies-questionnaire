@@ -1,2 +1,1 @@
-tests/correct_outputs.txt
-tests/malformed_outputs.txt
+test_outputs
