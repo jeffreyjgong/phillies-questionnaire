@@ -11,10 +11,8 @@ contents = lxml.fromstring(page_html.content)
 
 table_rows = contents.xpath('//tr')
 
-#print([len(T) for T in table_rows[:50]])
-#print([x[1].text_content() for x in table_rows])
 count = 0
-print('total count is: ', len(table_rows))
+print('Total rows of salary data: ', len(table_rows))
 
 with open('tests\malformed_outputs.txt', 'w') as f_1, open('tests\correct_outputs.txt', 'w') as f_2:
    for t in table_rows:
@@ -26,8 +24,6 @@ with open('tests\malformed_outputs.txt', 'w') as f_1, open('tests\correct_output
       else: 
          f_2.write(x.group() + '\n')
 
-print('total weird ones: ', count)
+print('Total malformed: ', count)
 
 
-# errors
-# 1. $ errors (no $, too many $)
