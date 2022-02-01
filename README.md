@@ -1,9 +1,6 @@
 # Phillies Questionnaire (part b) by Jeffrey Gong
 
-This is a web-app deployed with Flask, which dynamically populates 2 histograms and the average salary of the top 125 highest MLB salaries of the given year using Python, lxml.html, regex, requests, and matplotlib. An [example of the site](#example-of-the-site), [steps to clone and host locally](#steps-to-run-locally), [a quick explanation of some of the code](#quick-explanation-of-some-of-the-code), and [references can be found below](#references). 
-
-## Example of the Site
-![site_example](https://user-images.githubusercontent.com/82338138/152037604-42b3cb6b-ebb5-440f-a0b7-9d26db5a8bc4.PNG)
+This is a web-app deployed with Flask, which dynamically populates 2 histograms and the average salary of the top 125 highest MLB salaries of the given year using Python, lxml.html, regex, requests, and matplotlib. [Steps to clone and host locally](#steps-to-run-locally), [example of the site](#example-of-the-site), [a quick explanation of some of the code](#quick-explanation-of-some-of-the-code), and [references](#references) can be found below. 
 
 ## Steps to Run Locally
 1. Make sure you have **Python** and **pip** installed on your machine. 
@@ -12,6 +9,8 @@ This is a web-app deployed with Flask, which dynamically populates 2 histograms 
 4. Install requirements ```pip install -r requirements.txt```
 5. Run ```app.py``` with either, ```flask run```, ```python3 -m flask run```, ```python3 app.py```, or some related version of that
 6. Navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) (zoom out if images aren't side by side correctly)
+## Example of the Site
+![site_example](https://user-images.githubusercontent.com/82338138/152037604-42b3cb6b-ebb5-440f-a0b7-9d26db5a8bc4.PNG)
 
 ## Quick Explanation of Some of the Code
 #### Testing the data for malformed outputs ([test.py](https://github.com/jeffreyjgong/phillies-questionnaire/blob/main/tests/test.py))
