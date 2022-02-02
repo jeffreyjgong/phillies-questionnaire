@@ -21,10 +21,10 @@ The main errors were
 
 I then adapted the regex expression to accept strings that had any number of $ signs at the beginning using a ```*``` wildcard. 
 
-Now that I had a way of parsing through the salary data, I wrote a function to do so ([get_salaries.py](https://github.com/jeffreyjgong/phillies-questionnaire/blob/main/get_salaries.py) and returned the relevant information as a tuple (year, average salary, and salaries array).
+Now that I had a way of parsing through the salary data, I wrote a function to do so ([get_salaries.py](https://github.com/jeffreyjgong/phillies-questionnaire/blob/main/get_salaries.py)) and returned the relevant information as a tuple (year, average salary, and salaries array).
 
 #### Creating the Flask web app
-Then, I used a Flask web app structure to create 2 histograms, one with all the non-zero salaries and one with the top 125, and display the average salary of the top 125 highest MLB salaries in a given year ([views,py](https://github.com/jeffreyjgong/phillies-questionnaire/blob/main/website/views.py). 
+Then, I used a Flask web app structure to create 2 histograms, one with all the non-zero salaries and one with the top 125, and display the average salary of the top 125 highest MLB salaries in a given year ([views.py](https://github.com/jeffreyjgong/phillies-questionnaire/blob/main/website/views.py)). 
 
 This site dynamically updates on refresh. 
 
